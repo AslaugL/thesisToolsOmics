@@ -1,0 +1,28 @@
+Package: thesisToolsOmics
+Type: Package
+Title: Tools for analysing and plotting metabolomics data.
+Version: 0.1.0
+Author: Aslaug
+Maintainer: <aan106@post.uit.no>
+Description: Analysis of metabolomics, plotting results with ggplo2. Multivariate (o)pls performed with ropls package. 
+License: CeCill
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Depends:
+  cowplot,
+  dplyr,
+  forcats,
+  ggbeeswarm,
+  ggforce,
+  gghalves,
+  ggplot2,
+  ggpubr,
+  ggrepel,
+  psych,
+  ropls,
+  rstatix,
+  stringr,
+  tibble,
+  tidyr
+  
