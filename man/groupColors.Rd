@@ -9,6 +9,9 @@ groupColors(df)
 \arguments{
 \item{df}{The dataframe with data to be plotted.}
 }
+\value{
+A list with a named vector with colors for the variables in the 'group' column.
+}
 \description{
 Create a color manual for the group factor to be used in plots.
 }

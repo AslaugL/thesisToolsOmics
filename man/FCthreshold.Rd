@@ -4,12 +4,7 @@
 \alias{FCthreshold}
 \title{FCthreshold}
 \usage{
-FCthreshold(
-  df,
-  p_threshold = 0.05,
-  FC_threshold = 1.5,
-  feature_annotations = "yes"
-)
+FCthreshold(df, p_threshold = 0.05, FC_threshold = 1.5)
 }
 \arguments{
 \item{df}{Dataframe with a p.adj column from rstatix and a log2(FC) column with the log2 fold change values.}
@@ -17,8 +12,6 @@ FCthreshold(
 \item{p_threshold}{Adjusted p.value threshold. Default 0.05.}
 
 \item{FC_threshold}{log2 fold_change threshold, default 1.5.}
-
-\item{feature_annotations}{Does df have a 'feature_anno' column that can be used to color and annotate the features? If yes, this will be used. If default no features will be colored by their status as either up/downregulated or below threshold.}
 }
 \value{
 The dataframe with a threshold column.

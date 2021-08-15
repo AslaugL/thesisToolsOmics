@@ -9,9 +9,7 @@ plotPCAloadings(df, cutoff = NULL)
 \arguments{
 \item{df}{A dataframe with the principal components to be plotted in the first two columns.}
 
-\item{cutoff}{If addLabels is TRUE, which cutoff should be used?}
-
-\item{addLabels}{Add labels to features >cutoff or <-cutoff. TRUE or FALSE.}
+\item{cutoff}{Numerical value used to label all features with a loading >cutoff or <-cutoff. Default NULL.}
 }
 \value{
 A PCA loadings plot.

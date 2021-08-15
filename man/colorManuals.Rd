@@ -13,6 +13,9 @@ colorManuals(df, group = TRUE, feature_anno = TRUE)
 
 \item{feature_anno}{Should a color manual be made for the 'feature_anno' column? Default TRUE.}
 }
+\value{
+A list with one or two named vectors with colors for the variables in the 'group' and/or feature_anno' columns.
+}
 \description{
 Create a color manual to be used in various plots.
 }

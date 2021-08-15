@@ -6,26 +6,20 @@
 \usage{
 createPCA(
   df,
-  feature_annotations = "no",
   principal_components = c(1, 2),
   plots = "scores",
-  addLabels = FALSE,
-  cutoff,
+  cutoff = NULL,
   features = NULL
 )
 }
 \arguments{
 \item{df}{A tidy dataframe with at least sample_id, group, feature and value columns.}
 
-\item{feature_annotations}{Does dataframe have a feature_anno column that can be used to color the features? 'yes' or 'no', default 'no'.}
-
 \item{principal_components}{Principal components to be used as x and y axis, default is 1 and 2.}
 
 \item{plots}{Which plots should be made? 'scores', 'loadings' or 'both'.}
 
-\item{addLabels}{Add labels to features >cutoff or <-cutoff. TRUE or FALSE.}
-
-\item{cutoff}{If addLabels is TRUE, which cutoff should be used?}
+\item{cutoff}{Numerical value used to label all features with a loading >cutoff or <-cutoff. Default NULL.}
 }
 \value{
 A PCA loadings plot.

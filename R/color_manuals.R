@@ -9,7 +9,7 @@ groupColors <- function(df){
   data <- df %>% mutate_at('group', ~as.factor(.))
 
   group_colors <- list(
-    'sample_group' = setNames(c('#44AA99', '#AA4499'),
+    'sample_group' = setNames(c('#44AA99', '#AA4499', '#A87742'),
                               unique(data$group)))
 }
 

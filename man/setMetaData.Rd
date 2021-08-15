@@ -13,6 +13,9 @@ setMetaData(df, sample_col = "group", feature_col = "feature_anno")
 
 \item{feature_col}{The columns to select as metadata for features, default is 'feature_anno'.Set as FALSE if not in use.}
 }
+\value{
+A list with sample and/or feature metadata.
+}
 \description{
 Create a list of metadata for samples and features.
 }
