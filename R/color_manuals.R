@@ -27,7 +27,7 @@ featureAnnotationColors <- function(df){
 
   #Does feature_anno provide new feature annotations? Create a color manual for each individual feature annotation category
   feature_anno_colors <- list(
-    'feature_anno' = setNames(c('#DDDDDD', '#1F9E89', '#D8456C', '#D8456C', '#000000', '#E69FD0', '#56B4E9', '#009E73', '#F0E442', '#0072B2', '#D55E00', '#CC79A7', '#AA4499'),
+    'feature_anno' = setNames(c('#DDDDDD', '#1F9E89', '#D8456C', '#D8456C', '#000000', '#E69FD0', '#56B4E9', '#009E73', '#F0E442', '#0072B2', '#D55E00', '#CC79A7', '#AA4499', '#1F9E89'),
                             c('Below threshold', 'Underrepresented', 'Overrepresented', 'Above threshold', (unique(data$feature_anno) %>% str_remove(., '\\bBelow threshold\\b|\\bOverrepresented\\b|\\bUnderrepresented\\b|\\bAbove threshold\\b')))))
   }else{
     feature_anno_colors <- list(
